@@ -1,14 +1,16 @@
-import {Layout as AntLayout} from 'antd'
-import styles from './index.module.css'
+import { Layout as AntLayout } from "antd";
+import styles from "./index.module.css";
+import Header from "../Header";
 
-const Layout = ({children}: {children: React.ReactNode}) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className={styles.main}>
-        <AntLayout.Content style={{height: "100%"}}>
-            {children}
-        </AntLayout.Content>
+      <Header />
+      <AntLayout.Content style={{ height: "100%" }}>
+        {children}
+      </AntLayout.Content>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
