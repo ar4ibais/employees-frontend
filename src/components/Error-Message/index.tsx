@@ -1,6 +1,6 @@
 import { Alert } from "antd";
 
-const ErrorMessage = ({ message }: { message: string }) => {
+const ErrorMessage = ({ message }: { message?: string }) => {
   if (!message) {
     return null;
   }
